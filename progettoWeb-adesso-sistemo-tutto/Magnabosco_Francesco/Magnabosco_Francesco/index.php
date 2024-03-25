@@ -22,7 +22,7 @@ $result = $conn->query($sql);
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,6 +47,7 @@ while ($row = $result->fetch_assoc()) {
     echo "Inizio prestito: " . $row["dataI"] . "<br>";
     echo "Fine prestito: " . $row["dataF"];
     echo "</li>";
+    echo 'CHE SCHIFO GIULIA, ovviamente si scherza, forse';
 }
 }
 ?>
@@ -102,7 +103,7 @@ if ($result->num_rows > 0 && $result1->num_rows > 0) {
    
     }
 } else {
-    echo "<li>Nessun utente ha più di 5 prestiti.</li>";
+    echo "<li>Nessun utente ha più di cinque prestiti.</li>";
 }
 ?>
 
